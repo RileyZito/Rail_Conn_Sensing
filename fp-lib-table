@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Rail_Conn_Sensing)(type KiCad)(uri ${KIPRJMOD}/Rail_Conn_Sensing-footprints.pretty)(options "")(descr "")(disabled))
+  (lib (name Rail_Conn_Sensing-footprints)(type KiCad)(uri ${KIPRJMOD}/Rail_Conn_Sensing-footprints.pretty)(options "")(descr ""))
+)

@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name AMC1200)(type Legacy)(uri ${KIPRJMOD}/AMC1200.lib)(options "")(descr ""))
+  (lib (name AMC1200)(type Legacy)(uri ${KIPRJMOD}/Rail_Conn_Sensing-symbols/AMC1200.lib)(options "")(descr ""))
+  (lib (name PQMCE1-S5-S5-S)(type Legacy)(uri ${KIPRJMOD}/Rail_Conn_Sensing-symbols/PQMCE1-S5-S5-S.lib)(options "")(descr ""))
 )
