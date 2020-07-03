@@ -898,12 +898,12 @@ Wire Wire Line
 Wire Wire Line
 	4450 6300 4650 6300
 $Comp
-L Device:C C1
+L Device:CP1 C1
 U 1 1 5EF2E610
 P 3150 1550
 F 0 "C1" H 3265 1596 50  0000 L CNN
 F 1 "10uF" H 3265 1505 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 3188 1400 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 3188 1400 50  0001 C CNN
 F 3 "~" H 3150 1550 50  0001 C CNN
 	1    3150 1550
 	1    0    0    -1  
@@ -923,12 +923,12 @@ Connection ~ 3150 1700
 Wire Wire Line
 	2050 1700 2050 3450
 $Comp
-L Device:C C3
+L Device:CP1 C3
 U 1 1 5EF511EA
 P 7050 1750
 F 0 "C3" H 7165 1796 50  0000 L CNN
 F 1 "10uF" H 7165 1705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 7088 1600 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7088 1600 50  0001 C CNN
 F 3 "~" H 7050 1750 50  0001 C CNN
 	1    7050 1750
 	1    0    0    -1  
@@ -949,23 +949,23 @@ Connection ~ 6950 1600
 Wire Wire Line
 	6950 1600 7050 1600
 $Comp
-L Device:C C2
+L Device:CP1 C2
 U 1 1 5EF72AA8
 P 3250 6350
 F 0 "C2" H 3365 6396 50  0000 L CNN
 F 1 "10uF" H 3365 6305 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 3288 6200 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 3288 6200 50  0001 C CNN
 F 3 "~" H 3250 6350 50  0001 C CNN
 	1    3250 6350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C4
+L Device:CP1 C4
 U 1 1 5EF7AB8D
 P 10700 1750
 F 0 "C4" H 10815 1796 50  0000 L CNN
 F 1 "10uF" H 10815 1705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 10738 1600 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 10738 1600 50  0001 C CNN
 F 3 "~" H 10700 1750 50  0001 C CNN
 	1    10700 1750
 	1    0    0    -1  
