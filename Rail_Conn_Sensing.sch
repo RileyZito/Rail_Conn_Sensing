@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Rail Connection Sensing Circuit"
-Date "2020-06-30"
+Date "2020-07-06"
 Rev "v02"
 Comp ""
 Comment1 ""
@@ -282,25 +282,14 @@ F 3 "~" H 9200 4150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 74xx:74LS86 U5
-U 5 1 5EF05567
-P 9250 1750
-F 0 "U5" H 9480 1796 50  0000 L CNN
-F 1 "74LS86" H 9480 1705 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 9250 1750 50  0001 C CNN
-F 3 "74xx/74ls86.pdf" H 9250 1750 50  0001 C CNN
-	5    9250 1750
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74xx:74LS00 U4
 U 5 1 5EF071CD
-P 10050 1750
-F 0 "U4" H 10280 1796 50  0000 L CNN
-F 1 "74LS00" H 10280 1705 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 10050 1750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 10050 1750 50  0001 C CNN
-	5    10050 1750
+P 9300 1750
+F 0 "U4" H 9530 1796 50  0000 L CNN
+F 1 "74LS00" H 9530 1705 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 9300 1750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 9300 1750 50  0001 C CNN
+	5    9300 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -383,8 +372,6 @@ Wire Wire Line
 Connection ~ 8600 1250
 Wire Wire Line
 	8600 1250 8600 1400
-Wire Wire Line
-	8600 1250 9250 1250
 $Comp
 L power:GND #PWR016
 U 1 1 5EFDA7E3
@@ -398,21 +385,13 @@ F 3 "" H 10050 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10050 2250 10050 2400
-Wire Wire Line
-	9250 2250 10050 2250
 Connection ~ 10050 2250
 Wire Wire Line
 	8950 2000 8950 2250
 Wire Wire Line
-	8950 2250 9250 2250
-Connection ~ 9250 2250
-Wire Wire Line
 	8600 2000 8950 2000
 Wire Wire Line
 	8600 1150 8600 1250
-Wire Wire Line
-	10050 1250 9250 1250
-Connection ~ 9250 1250
 $Comp
 L Connector:Screw_Terminal_01x04 J1
 U 1 1 5F009034
@@ -973,9 +952,6 @@ $EndComp
 Wire Wire Line
 	10700 1600 10700 1250
 Wire Wire Line
-	10700 1250 10050 1250
-Connection ~ 10050 1250
-Wire Wire Line
 	10700 1900 10700 2250
 Wire Wire Line
 	10700 2250 10050 2250
@@ -1003,4 +979,82 @@ Wire Wire Line
 	5100 4800 5100 3600
 Connection ~ 5100 4800
 Connection ~ 5100 3600
+$Comp
+L 74xx:74LS86 U5
+U 3 1 5F0480D1
+P 7100 5600
+F 0 "U5" H 7100 5925 50  0000 C CNN
+F 1 "74LS86" H 7100 5834 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 7100 5600 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 7100 5600 50  0001 C CNN
+	3    7100 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS86 U5
+U 4 1 5F051C11
+P 7100 6150
+F 0 "U5" H 7100 6475 50  0000 C CNN
+F 1 "74LS86" H 7100 6384 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 7100 6150 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 7100 6150 50  0001 C CNN
+	4    7100 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5F06CCD5
+P 6700 6350
+F 0 "#PWR017" H 6700 6100 50  0001 C CNN
+F 1 "GND" H 6705 6177 50  0000 C CNN
+F 2 "" H 6700 6350 50  0001 C CNN
+F 3 "" H 6700 6350 50  0001 C CNN
+	1    6700 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 6250 6700 6250
+Wire Wire Line
+	6700 6250 6700 6350
+Wire Wire Line
+	6800 6050 6700 6050
+Wire Wire Line
+	6700 6050 6700 6250
+Connection ~ 6700 6250
+Wire Wire Line
+	6800 5700 6700 5700
+Wire Wire Line
+	6700 5700 6700 6050
+Connection ~ 6700 6050
+Wire Wire Line
+	6800 5500 6700 5500
+Wire Wire Line
+	6700 5500 6700 5700
+Connection ~ 6700 5700
+NoConn ~ 7400 5600
+NoConn ~ 7400 6150
+Wire Wire Line
+	8600 1250 9300 1250
+Wire Wire Line
+	8950 2250 9300 2250
+$Comp
+L 74xx:74LS86 U5
+U 5 1 5F0EC34F
+P 10050 1750
+F 0 "U5" H 10280 1796 50  0000 L CNN
+F 1 "74LS86" H 10280 1705 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 10050 1750 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 10050 1750 50  0001 C CNN
+	5    10050 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 9300 1250
+Connection ~ 9300 2250
+Wire Wire Line
+	9300 2250 10050 2250
+Wire Wire Line
+	9300 1250 10050 1250
+Connection ~ 10050 1250
+Wire Wire Line
+	10050 1250 10700 1250
 $EndSCHEMATC
