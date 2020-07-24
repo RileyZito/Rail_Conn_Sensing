@@ -3,6 +3,8 @@ A circuit to sense which forks of a train track are connected for a minature tra
 
 ![Rails](Images/rails.jpg)
 
+![Design](Documents/Design.md)
+
 ## Engineers
 @RileyZito and @wwc559
 
