@@ -1,7 +1,7 @@
 # Rail_Conn_Sensing
 A circuit to sense which forks of a train track are connected for a minature train set
 
-![Rails](Images/rails.JPG)
+![Rails](Images/rails.jpg)
 
 ## Engineers
 @RileyZito and @wwc559
